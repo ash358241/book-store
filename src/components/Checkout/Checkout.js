@@ -62,12 +62,12 @@ const Checkout = () => {
                 <tr className="text-center">
                 <td>{book.name}</td>
                 <td>1</td>
-                <td>{book.price}</td>
+                <td>${book.price}</td>
                 </tr>
                 <tr className="text-center">
                 <td>Total</td>
                 <td></td>
-                <td>{book.price}</td>
+                <td>${book.price}</td>
                 </tr>
             </tbody>
             </table>

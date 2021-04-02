@@ -35,7 +35,7 @@ const OrderDetails = () => {
     <tr className="text-center">
       <td>{bookName}</td>
       <td>{bookQuantity}</td>
-      <td>{bookPrice}</td>
+      <td>${bookPrice}</td>
     </tr>
     
   </tbody>
@@ -44,7 +44,7 @@ const OrderDetails = () => {
         <div className="text-right m-5">
         <h4>Product Price: ${bookPrice}</h4>
         <h4>Shipment Cost: $7</h4>
-        <h4>Payment Process: Cash Only!</h4>
+        <h4>Payment Process: Cash On Delivery!</h4>
         <h3>Total : ${parseInt(bookPrice)+7}</h3>
         </div>
         </div>

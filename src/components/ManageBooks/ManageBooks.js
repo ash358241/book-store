@@ -40,7 +40,7 @@ const ManageBooks = () => {
     <tr className="text-center">
       <td>{book.name}</td>
       <td>{book.author}</td>
-      <td>{book.price}</td>
+      <td>${book.price}</td>
       <td><Button onClick={() => handleDelete(book._id)} variant="danger"><FontAwesomeIcon icon={faTrashAlt} /> Delete</Button></td>
     </tr>
     )
