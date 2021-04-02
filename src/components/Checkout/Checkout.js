@@ -11,7 +11,7 @@ const Checkout = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     const {name, author, price} = book;
     useEffect(() => {
-        fetch(`http://localhost:5055/book/${id}`)
+        fetch(`https://afternoon-hollows-44126.herokuapp.com/book/${id}`)
         .then(res => res.json())
         .then(data => setBook(data[0]))
     }, [id])
@@ -28,7 +28,7 @@ const Checkout = () => {
             checkOutTime: new Date().toTimeString()
         }
 
-        const url = "http://localhost:5055/addOrder";
+        const url = "https://afternoon-hollows-44126.herokuapp.com/addOrder";
 
         fetch(url, {
             method: 'POST',

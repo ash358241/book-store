@@ -6,14 +6,14 @@ import { faCoffee, faTrashAlt } from '@fortawesome/free-solid-svg-icons'
 const ManageBooks = () => {
     const [booksData, setBooksData] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5055/books')
+        fetch('https://afternoon-hollows-44126.herokuapp.com/books')
         .then(res => res.json())
         .then(data => setBooksData(data))
     }, [])
 
     const handleDelete = id => {
        console.log(id);
-       fetch(`http://localhost:5055/delete/${id}`, {
+       fetch(`https://afternoon-hollows-44126.herokuapp.com/delete/${id}`, {
            method: 'DELETE'
        })
        .then(res => res.json())

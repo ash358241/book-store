@@ -16,7 +16,7 @@ const AddBook = () => {
         price: data.price,
         imageURL: imageURL
     }
-    const url = `http://localhost:5055/addBook`
+    const url = `https://afternoon-hollows-44126.herokuapp.com/addBook`
 
     console.log(bookData)
 
